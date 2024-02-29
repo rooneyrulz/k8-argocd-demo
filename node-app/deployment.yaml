@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-web-hello
+  namespace: k8-demo
 spec:
   replicas: 5
   selector:
@@ -15,6 +16,7 @@ spec:
       containers:
       - name: k8s-web-hello
         image: bstashchuk/k8s-web-hello
+        imagePullPolicy: IfNotPresent
         resources:
           limits:
             memory: "128Mi"
