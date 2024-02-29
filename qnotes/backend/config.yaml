@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: qnotes-config
+  namespace: qnotes-backend
+data:
+  environment: development
+  google-callback-url: /auth/google/callback
+  github-callback-url: /auth/github/callback
+  client-url-dev: http://localhost:80
+  server-url-dev: http://localhost:5000

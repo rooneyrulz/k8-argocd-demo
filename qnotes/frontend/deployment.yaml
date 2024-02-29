@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qnotes-deployment
+  namespace: qnotes-frontend
+  labels:
+    app: qnotes
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: qnotes
+  template:
+    metadata:
+      labels:
+        app: qnotes
+    spec:
+      containers:
+      - name: qnotes
+        image: rulzz35/qnotes-app:1.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        env:
+          - name: REACT_APP_BASE_URL
+            valueFrom:
+              configMapKeyRef:
+                name: qnotes-config
+                key: react-app-base-url
+          - name: REACT_APP_BASE_API_URL
+            valueFrom:
+              configMapKeyRef:
+                name: qnotes-config
+                key: react-app-base-api-url
+          - name: REACT_APP_GOOGLE_OAUTH_URL
+            valueFrom:
+              configMapKeyRef:
+                name: qnotes-config
+                key: react-app-google-oauth-url
+          - name: REACT_APP_GITHUB_OAUTH_URL
+            valueFrom:
+              configMapKeyRef:
+                name: qnotes-config
+                key: react-app-github-oauth-url
