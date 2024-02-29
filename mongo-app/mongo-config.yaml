@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+  namespace: k8s-mongo
+data:
+  mongo-url: mongo-service
