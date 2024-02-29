@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-web-hello
-  namespace: k8-demo
+  namespace: k8s-demo
 spec:
   replicas: 5
   selector:
