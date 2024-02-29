@@ -1,11 +1,22 @@
-# Repository for the K8s in 1 hour video
+# K8s DEMO
 
-## K8s manifest files
+**Note**: This repository contains two different application developments
+    - mongo-app
+    - node-app
+
+## K8s manifest files for mongo-app
 
 * mongo-config.yaml
 * mongo-secret.yaml
-* mongo.yaml
-* webapp.yaml
+* mongo-deployment.yaml
+* mongo-service.yaml
+* webapp-deployment.yaml
+* webapp-service.yaml
+
+## K8s manifest files for node-app
+
+* webapp-deployment.yaml
+* webapp-service.yaml
 
 ## K8s commands
 
@@ -49,13 +60,12 @@
 
 If you can't access the NodePort service webapp with `MinikubeIP:NodePort`, execute the following command:
 
-    minikube service webapp-service
+    minikube service <service-name>
 
 <br />
 
 #### Links
 
-* mongodb image on Docker Hub: <https://hub.docker.com/_/mongo>
-* webapp image on Docker Hub: <https://hub.docker.com/repository/docker/nanajanashia/k8s-demo-app>
 * k8s official documentation: <https://kubernetes.io/docs/home/>
-* webapp code repo: <https://gitlab.com/nanuchi/developing-with-docker/-/tree/feature/k8s-in-hour>
+* install minikube: <https://minikube.sigs.k8s.io/docs/start/>
+* mongodb image on Docker Hub: <https://hub.docker.com/_/mongo>
