@@ -4,7 +4,7 @@ metadata:
   name: qnotes-config
   namespace: qnotes-backend
 data:
-  environment: development
+  environment: production
   google-callback-url: /auth/google/callback
   github-callback-url: /auth/github/callback
   client-url-dev: http://172.20.147.151:31491
