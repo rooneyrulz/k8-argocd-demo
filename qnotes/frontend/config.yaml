@@ -6,6 +6,6 @@ metadata:
 data:
   environment: development
   react-app-base-url: http://172.20.147.151:31491
-  react-app-base-api-url: http://172.20.147.151:31614
+  react-app-base-api-url: http://172.20.147.152:31614
   react-app-google-oauth-url: http://172.20.147.151:31614/auth/google
   react-app-github-oauth-url: http://172.20.147.151:31614/auth/github
