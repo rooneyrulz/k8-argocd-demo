@@ -5,7 +5,7 @@ metadata:
   namespace: qnotes-frontend
 data:
   environment: development
-  react-app-base-url: http://localhost:80
-  react-app-base-api-url: http://localhost:5000
-  react-app-google-oauth-url: http://localhost:5000/auth/google
-  react-app-github-oauth-url: http://localhost:5000/auth/github
+  react-app-base-url: http://172.20.147.151:31491
+  react-app-base-api-url: http://172.20.147.151:31614
+  react-app-google-oauth-url: http://172.20.147.151:31614/auth/google
+  react-app-github-oauth-url: http://172.20.147.151:31614/auth/github
