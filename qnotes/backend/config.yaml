@@ -7,5 +7,5 @@ data:
   environment: development
   google-callback-url: /auth/google/callback
   github-callback-url: /auth/github/callback
-  client-url-dev: http://localhost:80
-  server-url-dev: http://172.20.147.151:31170
+  client-url-dev: http://172.20.147.151:31491
+  server-url-dev: http://172.20.147.151:31614
