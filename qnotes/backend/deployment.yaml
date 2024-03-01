@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: qnotes
-        image: rulzz35/qnotes:1.2
+        image: rulzz35/qnotes:1.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
