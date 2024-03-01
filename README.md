@@ -1,8 +1,9 @@
 # K8s DEMO
 
-**Note**: This repository contains two different application developments
+**Note**: This repository contains three different application developments
     - mongo-app
     - node-app
+    - qnotes
 
 ## K8s manifest files for mongo-app
 
@@ -10,13 +11,26 @@
 * mongo-secret.yaml
 * mongo-deployment.yaml
 * mongo-service.yaml
-* webapp-deployment.yaml
-* webapp-service.yaml
 
 ## K8s manifest files for node-app
 
 * webapp-deployment.yaml
 * webapp-service.yaml
+
+## K8s manifest files for qnotes
+
+- backend
+
+    * config.yaml
+    * secret.yaml
+    * deployment.yaml
+    * service.yaml
+
+- frontned
+
+    * config.yaml
+    * deployment.yaml
+    * service.yaml
 
 ## K8s commands
 
