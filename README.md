@@ -1,6 +1,7 @@
 # K8s DEMO
 
 **Note**: This repository contains three different application developments
+
     - mongo-app
     - node-app
     - qnotes
